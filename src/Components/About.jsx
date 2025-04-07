@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './About.css';  // Import custom CSS for animations
+import './About.css';  
 
 const About = () => {
   const [scrolling, setScrolling] = useState(false);
