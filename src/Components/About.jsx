@@ -19,19 +19,19 @@ const About = () => {
 
   return (
     <div className="about-container">
-      {/* Header Section */}
+      
       <header className={`about-header ${scrolling ? 'scrolled' : ''}`}>
         <h1>About Me</h1>
         <p>I'm a passionate web designer, eager to bring creative ideas to life with code.</p>
       </header>
 
-      {/* Profile Section */}
+      
       <section className={`profile-section ${scrolling ? 'scrolled' : ''}`}>
         <h2>Hi, I'm [ S.praveen kumar]</h2>
         <p>I’m a web designer with a passion for creating beautiful, user-friendly websites. I am proficient in HTML, CSS, JavaScript, react and always strive to create responsive and accessible designs.</p>
       </section>
 
-      {/* Education Section */}
+      
       <section className={`education-section ${scrolling ? 'scrolled' : ''}`}>
         <h2>Education</h2>
         <ul>
