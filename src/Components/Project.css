@@ -1,4 +1,4 @@
-  /* Global Reset */
+  
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@
     line-height: 1.6;
   }
   
-  /* Projects Container */
+  
   .projects-container {
     max-width: 1200px;
     margin: 50px auto;
@@ -28,7 +28,7 @@
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
   }
   
-  /* Section Title */
+  
   .section-title1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -43,7 +43,7 @@
     color: #3498db;
   }
   
-  /* Project Description */
+  
   .project-description1 {
     font-size: 1.2rem;
     color: #555;
@@ -55,7 +55,7 @@
     letter-spacing: 0.5px;
   }
   
-  /* Project Card Styling */
+  
   .project-card1 {
     background: linear-gradient(135deg, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8));
     border-radius: 8px;
@@ -67,15 +67,15 @@
   }
   
   .project-card1:hover {
-    transform: translateY(-10px); /* Lift the card on hover */
+    transform: translateY(-10px); 
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   }
   .project-card1:hover {
-    transform: translateY(-10px); /* Lift the card on hover */
+    transform: translateY(-10px); 
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   }
   
-  Project Title inside the Card */
+  
   .project-title1 {
     font-size: 2rem;
     font-weight: 600;
