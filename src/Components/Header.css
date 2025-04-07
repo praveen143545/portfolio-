@@ -1,0 +1,135 @@
+/* Container for the header */
+.header {
+  background: linear-gradient(135deg, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8));
+  padding: 20px 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow with more spread */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for smooth shadow effect */
+}
+
+/* Styling for the unordered list */
+.header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px; /* Space between each link */
+  align-items: center;
+}
+
+/* Styling for the individual list items */
+.header li {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #ecf0f1;
+  cursor: pointer;
+  transition: all 0.3s ease, transform 0.2s ease-in-out; /* Smooth transition for scaling */
+  padding: 10px 20px; /* More padding for a better clickable area */
+  border-radius: 50px; /* Rounded edges for a modern look */
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Ensures no content overflows during hover effect */
+}
+
+/* Link styling: remove underline and ensure proper spacing */
+.header a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
+}
+
+/* Hover effect for list items with subtle animations */
+.header li:hover {
+  background-color: #ed7fde;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adding a shadow on hover */
+  cursor: pointer;
+}
+
+/* Adding an animated underline on hover */
+.header li::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #287697;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.header li:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Active link styling with a more vibrant active state */
+/* .header a.active-link {
+  color: #7d89d5;
+  font-weight: 700;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Text shadow for emphasis */
+ 
+
+/* Keyframe for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Additional subtle animation when the page loads */
+.header li {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Dynamic background color change on scroll */
+.header.scrolled {
+  background: linear-gradient(135deg, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8));
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Darker shadow when scrolled */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8));
+  }
+
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding: 12px 25px; /* Larger clickable area on mobile */
+    border-radius: 30px;
+  }
+
+  /* Adjusting underline animation for smaller screens */
+  .header li::before {
+    height: 1px;
+  }
+}
+
+/* Add a subtle scroll effect */
+.header li:active {
+  transform: scale(0.95);
+  background-color: #7c6fba; /* Slightly different color for active state */
+}

@@ -1,0 +1,131 @@
+  /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Projects Container */
+  .projects-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .projects-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Section Title */
+  .section-title1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+  
+  .section-title1:hover {
+    color: #3498db;
+  }
+  
+  /* Project Description */
+  .project-description1 {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Project Card Styling */
+  .project-card1 {
+    background: linear-gradient(135deg, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8));
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .project-card1:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  .project-card1:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  Project Title inside the Card */
+  .project-title1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+  
+  .project-title1:hover {
+    color: #3498db;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .projects-container {
+      padding: 30px 20px;
+    }
+  
+    .section-title1 {
+      font-size: 2rem;
+    }
+  
+    .project-description1 {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  
+    .project-card1 {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects-container {
+      padding: 20px 10px;
+    }
+  
+    .section-title1 {
+      font-size: 1.6rem;
+    }
+  
+    .project-description1 {
+      font-size: 0.95rem;
+    }
+  
+    .project-card1 {
+      padding: 15px;
+    }
+  }
+  
+  

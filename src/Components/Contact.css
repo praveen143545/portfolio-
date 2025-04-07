@@ -1,0 +1,57 @@
+/* Contact Section Styling */
+.con1 {
+    background-color: #f4f7fa; /* Light background color */
+    padding: 40px 0;
+  }
+  
+  .container1 {
+    /* width: 80%; */
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(250, 190, 225, 0.8), rgba(0, 204, 255, 0.8));
+    padding: 100px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    
+  }
+  
+  .contact-list {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0;
+  }
+  
+  .contact-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .contact-list li::before {
+    content: "📞 "; /* Add icons before the text */
+  }
+  
+  .container1 h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .container1 p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .container1 {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container1 {
+      padding: 15px;
+    }
+  }
+  

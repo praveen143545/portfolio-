@@ -1,0 +1,309 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f7fa;
+}
+
+/* About Container */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+/* Header Section */
+.about-header {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, rgba(101, 6, 63, 0.8), rgba(0, 204, 255, 0.8));
+  color: white;
+  border-radius: 10px;
+  /* transform: translateY(50px);
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-in; */
+}
+
+.about-header.scrolled {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* Profile Section */
+.profile-section {
+  margin: 4rem 0;
+  background: linear-gradient(135deg, rgba(242, 180, 216, 0.8), rgba(0, 204, 255, 0.8));
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.profile-section.scrolled {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.profile-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.profile-section p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Education Section */
+.education-section {
+  margin: 4rem 0;
+  background: linear-gradient(135deg, rgba(250, 190, 225, 0.8), rgba(0, 204, 255, 0.8));
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(245, 238, 238, 0.1);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  padding: 1.5rem;
+}
+
+.education-section.scrolled {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.education-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.education-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education-section li {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+/* Global Variables */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #f39c12;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --hover-color: #f1c40f;
+  --progress-bar-background: #e0e0e0;
+  --progress-bar-hover-background: #f39c12;
+}
+
+/* Container Styling */
+.container {
+  /* max-width: 900px; */
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: var(--background-color);
+  border-radius: 15px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+.container h2 {
+  font-size: 2.8rem;
+  color: var(--text-color);
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: title-animation 3s ease infinite;
+}
+
+/* Title Underline */
+.container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+/* Keyframes for Title Animation */
+@keyframes title-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Skill List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Skill Item Styling */
+li {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: var(--text-color);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+li:hover .skill-name {
+  color: var(--primary-color);
+}
+
+/* Skill Item Text Gradient Effect */
+.skill-name {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+/* Progress Bar Container */
+.progress-bar {
+  width: 80%;
+  background-color: var(--progress-bar-background);
+  border-radius: 12px;
+  height: 16px;
+  margin: 1rem 0;
+  position: relative;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.progress-bar:hover {
+  background-color: var(--progress-bar-hover-background);
+}
+
+/* Progress Bar Fill */
+.progress {
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  width: 0;
+  transition: width 1s ease-in-out, background 0.5s ease;
+}
+
+.progress-bar:hover .progress {
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--hover-color) 100%);
+}
+
+/* Percentage Text */
+.percentage {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+/* Skill Item Text Color on Hover */
+li:hover .percentage {
+  color: var(--hover-color);
+}
+
+/* Skill Item Text Animation */
+@keyframes skill-text-animation {
+  0% {
+    color: rgba(52, 152, 219, 0.5);
+  }
+  50% {
+    color: var(--primary-color);
+  }
+  100% {
+    color: rgba(52, 152, 219, 0.5);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .progress-bar {
+    width: 90%;
+  }
+
+  li {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .progress-bar {
+    width: 100%;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+}
