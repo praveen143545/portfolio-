@@ -1,6 +1,6 @@
-/* Contact Section Styling */
+
 .con1 {
-    background-color: #f4f7fa; /* Light background color */
+    background-color: #f4f7fa; 
     padding: 40px 0;
   }
   
@@ -17,7 +17,7 @@
   }
   
   .contact-list {
-    list-style-type: none; /* Remove default list bullets */
+    list-style-type: none; 
     padding: 0;
   }
   
@@ -29,7 +29,7 @@
   }
   
   .contact-list li::before {
-    content: "📞 "; /* Add icons before the text */
+    content: "📞 "; 
   }
   
   .container1 h2 {
